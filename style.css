@@ -1,0 +1,170 @@
+/* Aura Theme */
+/* :root {
+  --black: #15141b;
+  --white: #edecee;
+  --gray: #6d6d6d;
+  --purple: #a277ff;
+  --purple-fading: #3d375e7f;
+  --green: #61ffca;
+  --orange: #ffca85;
+  --pink: #f694ff;
+  --blue: #82e2ff;
+  --red: 	#ff6767;
+  --yellow: #ffd67d;
+  --surface0: #2e2c3c;
+
+  --background: var(--black);
+  --foreground: var(--surface0);
+  --foreground-color: var(--white);
+  --muted-color: var(--gray);
+  --selection-color: var(--purple-fading);
+  --primary-color: var(--purple);
+  --secondary-color: var(--green);
+  --tertiary-color: var(--orange);
+  --quaternary-color: var(--pink);
+  --quinary-color: var(--blue);
+  --senary-color: var(--red);
+
+  --warning-color: var(--orange);
+  --success-color: var(--green);
+  --error-color: var(--red);  
+  
+  --black-soft: #15141b;
+  --white-soft: #bdbdbd;
+  --gray-soft: #6d6d6d;
+  --purple-soft: #8464c6;
+  --purple-fading-soft: #3d375e7f;
+  --green-soft: #54c59f;
+  --orange-soft: #c7a06f;
+  --pink-soft: #c17ac8;
+  --blue-soft: #6cb2c7;
+  --red-soft: #c55858;
+
+  --background-soft-color: var(--black-soft);  
+  --foreground-soft-color: var(--white-soft);
+  --muted-soft-color: var(--gray-soft);
+  --selection-soft-color: var(--purple-fading-soft);
+  --primary-soft-color: var(--purple-soft);
+  --secondary-soft-color: var(--green-soft);
+  --tertiary-soft-color: var(--orange-soft);
+  --quaternary-soft-color: var(--pink-soft);
+  --quinary-soft-color: var(--blue-soft);
+  --senary-soft-color: var(--red-soft);
+
+  --warning-soft-color: var(--orange-soft);
+  --success-soft-color: var(--green-soft);
+  --error-soft-color: var(--red-soft);  
+} */
+
+/* Catppuccin */
+:root{
+  --background: #1e1e2e;
+  --foreground: #313244;
+  --primary-color: #74c7ec;
+  --red: #f38ba8;
+  --orange: #fab387;
+  --yellow: #f9e2af;
+  --green: #a6e3a1;
+  --purple: #cba6f7;
+}
+
+html {
+  align-items: center;
+  background-color: var(--background);
+  color: #c5c8c6;
+  display: flex;
+  font: 22px/1 "Inconsolata", monospace;
+  height: 100%;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--foreground);
+  border-radius: 2px;
+  box-shadow: 1px 1px 6px #1d1f2187;
+  color: #c5c8c6;
+  display: flex;
+  flex-direction: column;
+  min-height: 30ch;
+  min-width: 50vw;
+  padding: 2em;
+}
+
+p {
+  margin: 0;
+}
+
+p span {
+  color: var(--primary-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  column-gap: 2em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1em 0;
+}
+
+ul:nth-child(5n + 1) li:first-child {
+  color: var(--red);
+}
+
+ul:nth-child(5n + 2) li:first-child {
+  color: var(--orange);
+}
+
+ul:nth-child(5n + 3) li:first-child {
+  color: var(--yellow);
+}
+
+ul:nth-child(5n + 4) li:first-child {
+  color: var(--green);
+}
+
+ul:nth-child(5n + 5) li:first-child {
+  color: var(--purple);
+}
+
+li {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  margin: 0 0 1em;
+}
+
+p #cursor {
+  background-color: var(--main);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
